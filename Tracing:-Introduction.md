@@ -112,3 +112,27 @@ Running the above operation on the Rinkeby network will result in this significa
 Although the raw opcode traces we've generated above have their use, this basic way of tracing is problematic in the real world. Having an individual log entry for every single opcode is too low level for most use cases, and will require developers to create additional tools to post-process the traces. Additionally, a full opcode trace can easily go into the hundreds of megabytes, making them very resource intensive to get out of the node and process externally.
 
 To avoid all of the previously mentioned issues, `go-ethereum` supports running custom JavaScript tracers *within* the Ethereum node, which have full access to the EVM stack, memory and contract storage. This permits developers to only gather the data they need, and do any processing **at** the data. Please see the next section for our *custom in-node tracers*.
+
+### Pruning
+
+Geth by default does in-memory pruning of state, discarding state entries that it deems is no longer necessary to maintain. This is configured via the `--gcmode` option. Often, people run into the error that state is not available. 
+
+Say you want to do a trace on block `B`. Now there are a couple of cases:
+
+1. You have done a fast-sync, pivot block `P` where `P <= B`.
+2. You have done a fast-sync, pivot block `P` where `P > B`. 
+3. You have done a full-sync, with pruning
+4. You have done a full-sync, without pruning (`--gcmode=archive`)
+
+Here's what happens in each respective case:
+
+1. Geth will regenerate the desired state by replaying blocks from the closest point in time before `B` where it has full state. This defaults to [`128`](https://github.com/ethereum/go-ethereum/blob/master/eth/api_tracer.go#L52) blocks max, but you can specify more in the actual call `... "reexec":1000 .. }` to the tracer. 
+2. Sorry, can't be done without replaying from genesis.   
+3. Same as 1)
+4. Does not need to replay anything, can immediately load up the state and serve the request. 
+
+There is one other option available to you, which may or may not suit your needs. That is to use [Evmlab]( https://github.com/holiman/evmlab). 
+```
+docker pull holiman/evmlab && docker run -it holiman/evmlab
+```
+There you can use the reproducer. The reproducer will incrementally fetch data from infura until it has all the information required to create the trace locally on an evm which is bundled with the image. It will create a custom genesis containing the state that the transaction touches (balances, code, nonce etc). It should be mentioned that the evmlab reproducer is strictly guaranteed to be totally exact with regards to gascosts incurred by the outer transaction, as evmlab does not fully calculate the gascosts for nonzero data etc, but is usually sufficient to analyze contracts and events. 
