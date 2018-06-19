@@ -3,61 +3,64 @@ $ geth help
 NAME:
    geth - the go-ethereum command line interface
 
-   Copyright 2013-2017 The go-ethereum Authors
+   Copyright 2013-2018 The go-ethereum Authors
 
 USAGE:
    geth [options] command [command options] [arguments...]
    
 VERSION:
-   1.7.3-stable
+   1.8.11-stable
    
 COMMANDS:
-   account     Manage accounts
-   attach      Start an interactive JavaScript environment (connect to node)
-   bug         opens a window to report a bug on the geth repo
-   console     Start an interactive JavaScript environment
-   copydb      Create a local chain from a target chaindata folder
-   dump        Dump a specific block from storage
-   dumpconfig  Show configuration values
-   export      Export blockchain into file
-   import      Import a blockchain file
-   init        Bootstrap and initialize a new genesis block
-   js          Execute the specified JavaScript files
-   license     Display license information
-   makecache   Generate ethash verification cache (for testing)
-   makedag     Generate ethash mining DAG (for testing)
-   monitor     Monitor and visualize node metrics
-   removedb    Remove blockchain and state databases
-   version     Print version numbers
-   wallet      Manage Ethereum presale wallets
-   help, h     Shows a list of commands or help for one command
+   account           Manage accounts
+   attach            Start an interactive JavaScript environment (connect to node)
+   bug               opens a window to report a bug on the geth repo
+   console           Start an interactive JavaScript environment
+   copydb            Create a local chain from a target chaindata folder
+   dump              Dump a specific block from storage
+   dumpconfig        Show configuration values
+   export            Export blockchain into file
+   export-preimages  Export the preimage database into an RLP stream
+   import            Import a blockchain file
+   import-preimages  Import the preimage database from an RLP stream
+   init              Bootstrap and initialize a new genesis block
+   js                Execute the specified JavaScript files
+   license           Display license information
+   makecache         Generate ethash verification cache (for testing)
+   makedag           Generate ethash mining DAG (for testing)
+   monitor           Monitor and visualize node metrics
+   removedb          Remove blockchain and state databases
+   version           Print version numbers
+   wallet            Manage Ethereum presale wallets
+   help, h           Shows a list of commands or help for one command
    
 ETHEREUM OPTIONS:
-  --config value                        TOML configuration file
-  --datadir "/home/karalabe/.ethereum"  Data directory for the databases and keystore
-  --keystore                            Directory for the keystore (default = inside the datadir)
-  --nousb                               Disables monitoring for and managing USB hardware wallets
-  --networkid value                     Network identifier (integer, 1=Frontier, 2=Morden (disused), 3=Ropsten, 4=Rinkeby) (default: 1)
-  --testnet                             Ropsten network: pre-configured proof-of-work test network
-  --rinkeby                             Rinkeby network: pre-configured proof-of-authority test network
-  --syncmode "fast"                     Blockchain sync mode ("fast", "full", or "light")
-  --ethstats value                      Reporting URL of a ethstats service (nodename:secret@host:port)
-  --identity value                      Custom node name
-  --lightserv value                     Maximum percentage of time allowed for serving LES requests (0-90) (default: 0)
-  --lightpeers value                    Maximum number of LES client peers (default: 20)
-  --lightkdf                            Reduce key-derivation RAM & CPU usage at some expense of KDF strength
+  --config value                    TOML configuration file
+  --datadir "/home/ligi/.ethereum"  Data directory for the databases and keystore
+  --keystore                        Directory for the keystore (default = inside the datadir)
+  --nousb                           Disables monitoring for and managing USB hardware wallets
+  --networkid value                 Network identifier (integer, 1=Frontier, 2=Morden (disused), 3=Ropsten, 4=Rinkeby) (default: 1)
+  --testnet                         Ropsten network: pre-configured proof-of-work test network
+  --rinkeby                         Rinkeby network: pre-configured proof-of-authority test network
+  --syncmode "fast"                 Blockchain sync mode ("fast", "full", or "light")
+  --gcmode value                    Blockchain garbage collection mode ("full", "archive") (default: "full")
+  --ethstats value                  Reporting URL of a ethstats service (nodename:secret@host:port)
+  --identity value                  Custom node name
+  --lightserv value                 Maximum percentage of time allowed for serving LES requests (0-90) (default: 0)
+  --lightpeers value                Maximum number of LES client peers (default: 100)
+  --lightkdf                        Reduce key-derivation RAM & CPU usage at some expense of KDF strength
   
 DEVELOPER CHAIN OPTIONS:
   --dev               Ephemeral proof-of-authority network with a pre-funded developer account, mining enabled
   --dev.period value  Block period to use in developer mode (0 = mine only if transaction pending) (default: 0)
   
 ETHASH OPTIONS:
-  --ethash.cachedir                         Directory to store the ethash verification caches (default = inside the datadir)
-  --ethash.cachesinmem value                Number of recent ethash caches to keep in memory (16MB each) (default: 2)
-  --ethash.cachesondisk value               Number of recent ethash caches to keep on disk (16MB each) (default: 3)
-  --ethash.dagdir "/home/karalabe/.ethash"  Directory to store the ethash mining DAGs (default = inside home folder)
-  --ethash.dagsinmem value                  Number of recent ethash mining DAGs to keep in memory (1+GB each) (default: 1)
-  --ethash.dagsondisk value                 Number of recent ethash mining DAGs to keep on disk (1+GB each) (default: 2)
+  --ethash.cachedir                     Directory to store the ethash verification caches (default = inside the datadir)
+  --ethash.cachesinmem value            Number of recent ethash caches to keep in memory (16MB each) (default: 2)
+  --ethash.cachesondisk value           Number of recent ethash caches to keep on disk (16MB each) (default: 3)
+  --ethash.dagdir "/home/ligi/.ethash"  Directory to store the ethash mining DAGs (default = inside home folder)
+  --ethash.dagsinmem value              Number of recent ethash mining DAGs to keep in memory (1+GB each) (default: 1)
+  --ethash.dagsondisk value             Number of recent ethash mining DAGs to keep on disk (1+GB each) (default: 2)
   
 TRANSACTION POOL OPTIONS:
   --txpool.nolocals            Disables price exemptions for locally submitted transactions
@@ -72,7 +75,9 @@ TRANSACTION POOL OPTIONS:
   --txpool.lifetime value      Maximum amount of time non-executable transaction are queued (default: 3h0m0s)
   
 PERFORMANCE TUNING OPTIONS:
-  --cache value            Megabytes of memory allocated to internal caching (min 16MB / database forced) (default: 128)
+  --cache value            Megabytes of memory allocated to internal caching (default: 1024)
+  --cache.database value   Percentage of cache memory allowance to use for database io (default: 75)
+  --cache.gc value         Percentage of cache memory allowance to use for trie pruning (default: 25)
   --trie-cache-gens value  Number of trie node generations to keep in memory (default: 120)
   
 ACCOUNT OPTIONS:
@@ -92,6 +97,7 @@ API AND CONSOLE OPTIONS:
   --ipcdisable           Disable the IPC-RPC server
   --ipcpath              Filename for IPC socket/pipe within the datadir (explicit paths escape it)
   --rpccorsdomain value  Comma separated list of domains from which to accept cross origin requests (browser enforced)
+  --rpcvhosts value      Comma separated list of virtual hostnames from which to accept requests (server enforced). Accepts '*' wildcard. (default: "localhost")
   --jspath loadScript    JavaScript root path for loadScript (default: ".")
   --exec value           Execute JavaScript statement
   --preload value        Comma separated list of JavaScript files to preload into the console
@@ -119,8 +125,8 @@ MINER OPTIONS:
   --extradata value         Block extra data set by the miner (default = client version)
   
 GAS PRICE ORACLE OPTIONS:
-  --gpoblocks value      Number of recent blocks to check for gas prices (default: 10)
-  --gpopercentile value  Suggested gas price is the given percentile of a set of recent transaction gas prices (default: 50)
+  --gpoblocks value      Number of recent blocks to check for gas prices (default: 20)
+  --gpopercentile value  Suggested gas price is the given percentile of a set of recent transaction gas prices (default: 60)
   
 VIRTUAL MACHINE OPTIONS:
   --vmdebug  Record information useful for VM and contract debugging
@@ -147,13 +153,14 @@ WHISPER (EXPERIMENTAL) OPTIONS:
   --shh.pow value             Minimum POW accepted (default: 0.2)
   
 DEPRECATED OPTIONS:
-  --fast   Enable fast syncing through state downloads
-  --light  Enable light client mode
+  --fast   Enable fast syncing through state downloads (replaced by --syncmode)
+  --light  Enable light client mode (replaced by --syncmode)
   
 MISC OPTIONS:
   --help, -h  show help
   
 
 COPYRIGHT:
-   Copyright 2013-2017 The go-ethereum Authors
+   Copyright 2013-2018 The go-ethereum Authors
+
 ```
