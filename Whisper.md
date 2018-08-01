@@ -1,8 +1,8 @@
-Here you can find the resources related to Whisper v5.
+Whisper v5 is no longer supported. Here you can find the resources related to Whisper v6.
 
 [Whisper Overview](https://github.com/ethereum/go-ethereum/wiki/Whisper-Overview)
 
-[Whisper Usage](https://github.com/ethereum/go-ethereum/wiki/Whisper-Usage)
+[Whisper Documentation](http://web3js.readthedocs.io/en/1.0/web3-shh.html)
 
 [Diagnostic Tool wnode](https://github.com/ethereum/go-ethereum/wiki/Diagnostic-Tool-wnode)
 
