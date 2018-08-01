@@ -7,3 +7,7 @@ Whisper v5 is no longer supported. Here you can find the resources related to Wh
 [Diagnostic Tool wnode](https://github.com/ethereum/go-ethereum/wiki/Diagnostic-Tool-wnode)
 
 [Achieving Darkness](https://github.com/ethereum/go-ethereum/wiki/Achieving-Darkness)
+
+## Legacy documentation (unsupported)
+
+[Whisper RPC API 5.0](https://github.com/ethereum/go-ethereum/wiki/Whisper-v5-RPC-API)
