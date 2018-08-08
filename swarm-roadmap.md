@@ -1,2 +1,1 @@
-see https://github.com/ethersphere/swarm/wiki/roadmap
-and https://github.com/ethereum/go-ethereum/wiki/swarm-dev-progress
+See [Swarm Roadmap](https://github.com/orgs/ethersphere/projects/5)
