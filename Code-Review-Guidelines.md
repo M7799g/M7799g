@@ -92,7 +92,7 @@ with those:
   submit the refactoring as an independent PR, or at least as an independent commit in the
   same PR.
 
-* Author is rejecting your feedback: reviewers have authority to reject any change for technical reasons. If you're unsure, ask the team for a second pair of eyes. You may close the PR if no consensus can be reached. 
+* Author keeps rejecting your feedback: reviewers have authority to reject any change for technical reasons. If you're unsure, ask the team for a second opinion. You may close the PR if no consensus can be reached. 
 
 [effgo]: https://golang.org/doc/effective_go.html
 [revcomment]: https://github.com/golang/go/wiki/CodeReviewComments
