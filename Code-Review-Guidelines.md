@@ -89,8 +89,10 @@ with those:
 
 * Author insists on including refactoring changes alongside bug fix: We can tolerate small
   refactorings alongside any change. If you feel lost in the diff, ask the author to
-  submit the refactoring as an idenpendent PR, or at least as an independent commit in the
+  submit the refactoring as an independent PR, or at least as an independent commit in the
   same PR.
+
+* Author is rejecting your feedback: reviewers have authority to reject any change for technical reasons. If you're unsure, ask the team for a second pair of eyes. You may close the PR if no consensus can be reached. 
 
 [effgo]: https://golang.org/doc/effective_go.html
 [revcomment]: https://github.com/golang/go/wiki/CodeReviewComments
