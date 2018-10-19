@@ -5,28 +5,27 @@
     * [Issues · facebook/react](https://github.com/facebook/react/issues)
 * Labels
     * Type
-        * Error
+        * Error / Bug
         * Enhancement
-        * Epic
     * Status
         * needs_more_info
         * in_progress
         * pr_review
         * needs_discussion
     * Component
-        *  Whisper
+        * Whisper
         * Swarm
         * Clef
         * Android
-    * Resolution
-        * Duplicate
-        * lack_of_interest
+        * ...
 * Milestones
     * \<current\>
-    * Next tasks
-    * Sometimes
+    * [Next tasks](https://github.com/ethereum/go-ethereum/milestone/81)
+    * [Backlog](https://github.com/ethereum/go-ethereum/milestone/80)
+* Projects -- We use projects for a larger chunk of work with a specific outcome. A project can overarch multiple releases (its issues may be in multiple milestones), but it has an end.
 * Workflow
     * We have a weekly or bi-weekly triage meeting. This is when we go through the new issues and do one of the following
-        * Close it
-        * Assign it to a milestone
-        * Change its status to "Needs more information" or "Needs discussion"
+        * Close it.
+        * Assign it to the "Next tasks" milestone which doesn't have an end date.
+        * Move it to the Backlog milestone.
+        * Change its status to "Needs more information" or "Needs discussion".
