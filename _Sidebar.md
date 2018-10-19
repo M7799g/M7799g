@@ -32,6 +32,8 @@
 
 [Community and support](https://github.com/ethereum/go-ethereum/wiki/geth#community-and-support)
 
+[Issue handling workflow](https://github.com/ethereum/go-ethereum/wiki/Issue-handling-workflow) (draft proposal)
+
 ### Developers
 
 [Mobile Clients](https://github.com/ethereum/go-ethereum/wiki/Mobile-Clients:-Libraries-and-Inproc-Ethereum-Nodes)
