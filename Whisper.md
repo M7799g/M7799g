@@ -10,6 +10,8 @@
 
 [Achieving Darkness](https://github.com/ethereum/go-ethereum/wiki/Achieving-Darkness)
 
+[Javascript Example](https://github.com/ethereum/go-ethereum/wiki/Whisper-js-example)
+
 ## Legacy documentation (unsupported)
 
 Whisper v2 to v5 are no longer supported. 
