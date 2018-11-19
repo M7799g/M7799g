@@ -40,7 +40,7 @@ It's ok to not set a due date for a milestone, but once you release it, close it
 Optionally, use a project board to collect issues of a larger effort that has an end state and overarches multiple releases.
 
 ## Workflow
-We have a weekly or bi-weekly triage meeting. Issues are preselected by labelling them "status:triage". This is when we go through the new issues and do one of the following
+We have a weekly or bi-weekly triage meeting. Issues are preselected by [labelling them "status:triage" and sorted by the number of comments](https://github.com/ethereum/go-ethereum/issues?q=is%3Aopen+is%3Aissue+label%3Astatus%3Atriage+sort%3Acomments-desc). This is when we go through the new issues and do one of the following
 1. Close it.
 1. Assign it to "Coming soon" milestone which doesn't have an end date.
 1. Move it to the "Future" milestone.
