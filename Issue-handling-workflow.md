@@ -46,4 +46,6 @@ We have a weekly or bi-weekly triage meeting. Issues are preselected by labellin
 1. Move it to the "Future" milestone.
 1. Change its status to "Need:\<what-is-needed\>".
 
-If you can, label the issue with the appropriate area/component.
+Optional further activities:
+* Label the issue with the appropriate area/component.
+* Add a section to the FAQ or add a wiki page. Link to it from the issue.
