@@ -39,9 +39,9 @@ It's ok to not set a due date for a milestone, but once you release it, close it
 
 Optionally, use a project board to collect issues of a larger effort that has an end state and overarches multiple releases.
 
-* Workflow
-    * We have a weekly or bi-weekly triage meeting. This is when we go through the new issues and do one of the following
-        * Close it.
-        * Assign it to the "Next tasks" milestone which doesn't have an end date.
-        * Move it to the Backlog milestone.
-        * Change its status to "Needs more information" or "Needs discussion".
+## Workflow
+We have a weekly or bi-weekly triage meeting. Issues are preselected by labelling them "status:triage". This is when we go through the new issues and do one of the following
+1. Close it.
+1. Assign it to "Coming soon" milestone which doesn't have an end date.
+1. Move it to the "Future" milestone.
+1. Change its status to "Need:\<what-is-needed\>".
