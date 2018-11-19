@@ -45,3 +45,5 @@ We have a weekly or bi-weekly triage meeting. Issues are preselected by labellin
 1. Assign it to "Coming soon" milestone which doesn't have an end date.
 1. Move it to the "Future" milestone.
 1. Change its status to "Need:\<what-is-needed\>".
+
+If you can, label the issue with the appropriate area/component.
