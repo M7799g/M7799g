@@ -39,3 +39,5 @@
 [Mobile Clients](https://github.com/ethereum/go-ethereum/wiki/Mobile-Clients:-Libraries-and-Inproc-Ethereum-Nodes)
 
 [Native DApps](https://github.com/ethereum/go-ethereum/wiki/Native-DApps:-Go-bindings-to-Ethereum-contracts)
+
+[Active go-ethereum projects](https://github.com/ethereum/go-ethereum/wiki/Active-go-ethereum-projects)
