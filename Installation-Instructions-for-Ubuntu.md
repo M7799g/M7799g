@@ -26,9 +26,7 @@ Clone the repository to a directory of your choosing:
 ```shell
 git clone https://github.com/ethereum/go-ethereum
 ```
-Install latest distribution of Go (v1.7) if you don't have it already:
-
-[See instructions](https://github.com/ethereum/go-ethereum/wiki/Installing-Go#ubuntu-1404)
+Install latest distribution of [Go](https://golang.org/) if you don't have it already.
 
 Building `geth` requires Go and C compilers to be installed:
 
