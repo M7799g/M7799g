@@ -2,11 +2,11 @@
 
 Download and run the installer found at http://golang.org/doc/install
 
-### OS X
+### macOS
 
 Download an install the darwin binary from https://golang.org/dl/
 
-You can also install go using the Homebrew package manager.
+You can also install Go using the Homebrew package manager.
 
 ### Linux
 
@@ -14,19 +14,11 @@ You can also install go using the Homebrew package manager.
 
 The Ubuntu repositories carry an old version of Go.
 
-Ubuntu users can use the 'gophers' PPA to install an up to date version of Go (version 1.7 or later is preferred).
-See https://launchpad.net/~gophers/+archive/ubuntu/archive for more information.
-Note that this PPA requires adding `/usr/lib/go-1.X/bin` to the executable PATH.
+See https://github.com/golang/go/wiki/Ubuntu for more information on how to install an up-to-date version of Go.
 
 #### Other distros
 
-Download the latest distribution
-
-`curl -O https://storage.googleapis.com/golang/go1.7.3.linux-amd64.tar.gz`
-
-Unpack it to the `/usr/local` (might require sudo)
-
-`tar -C /usr/local -xzf go1.7.3.linux-amd64.tar.gz`
+For other distros, please refer to the respective page at https://github.com/golang/go/wiki#platform-specific-information on how to install an up-to-date version of Go.
 
 #### Set GOPATH and PATH
 
