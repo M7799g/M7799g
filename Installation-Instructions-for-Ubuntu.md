@@ -31,7 +31,7 @@ Install latest distribution of [Go](https://golang.org/) if you don't have it al
 Building `geth` requires Go and C compilers to be installed:
 
 ```shell
-sudo apt-get install -y build-essential golang
+sudo apt-get install -y build-essential
 ```
 
 Finally, build the `geth` program using the following command.
