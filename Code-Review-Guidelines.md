@@ -51,7 +51,7 @@ Code submitted must pass all unit tests and static analysis ("lint") checks. We 
 CI to test code on Linux, macOS and AppVeyor to test code on Microsoft Windows.
 
 For failing CI builds, the issue may not be related to the PR itself. Such failures are
-usually related to flakey tests. These failures can be ignored (authors don't need to fix
+usually related to flaky tests. These failures can be ignored (authors don't need to fix
 unrelated issues), but please file a GH issue so the test gets fixed eventually.
 
 ### Commit Messages
@@ -81,7 +81,7 @@ issue notices, e.g. "Fixes #42353".
 
 ### Special Situations And How To Deal With Them
 
-As a reviewer, you may find yourself in one of the sitations below. Here's how to deal
+As a reviewer, you may find yourself in one of the situations below. Here's how to deal
 with those:
 
 * The author doesn't follow up: ping them after a while (i.e. after a few days). If there
