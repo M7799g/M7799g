@@ -1,1 +1,1 @@
-see here https://github.com/ethersphere/go-ethereum/wiki/IPFS-&-SWARM 
+see here https://ethereum.stackexchange.com/questions/2138/what-is-the-difference-between-swarm-and-ipfs
