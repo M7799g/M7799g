@@ -81,8 +81,6 @@ IRC Freenode channels:
 * `#dappdevs`: Dapp developers channel
 * `#ethdev`: buildserver etc
 
-[IRC Logs by ZeroGox](https://zerogox.com/bot/log)
-
 ### Gitter 
 
 * [go-ethereum Gitter](https://gitter.im/ethereum/go-ethereum)
@@ -92,15 +90,7 @@ IRC Freenode channels:
 
 ### Forum
 
-- [Forum](https://forum.ethereum.org/categories/go-implementation)
-
-### The ZeroGox Bot
-
-[ZeroGox Bot](https://zerogox.com/bot)
-
-### Dapp developers' mailing list
-
-https://dapplist.net/
+- [Forum](https://forum.ethereum.org/categories/geth)
 
 ### Helpdesk 
 
