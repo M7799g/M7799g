@@ -62,13 +62,12 @@ Name or blame = list of contributors:
 - Forum: https://forum.ethereum.org
 - Github: https://github.com/ethereum
 - Blog: https://blog.ethereum.org
-- Wiki: http://wiki.ethereum.org
+- Wiki: https://github.com/ethereum/wiki/wiki
 - Twitter: http://twitter.com/ethereumproject
 - Reddit: http://reddit.com/r/ethereum
 - Meetups: http://ethereum.meetup.com
 - Facebook: https://www.facebook.com/ethereumproject
 - Youtube: http://www.youtube.com/ethereumproject
-- Google+: http://google.com/+EthereumOrgOfficial
 
 ### IRC 
 
