@@ -1,3 +1,9 @@
+***
+
+**The current best source of documentation for Geth is [geth.ethereum.org/docs](https://geth.ethereum.org/docs/). This Wiki is not actively maintained, serves as an archive only, and we will soon remove it.**
+
+***
+
 # Installation Instructions for ARM
 
 Geth is built for ARM using cross-compilation. See [Cross compiling Ethereum](https://github.com/ethereum/go-ethereum/wiki/Cross-compiling-Ethereum) for more details.

@@ -1,4 +1,10 @@
 ***
+
+**The current best source of documentation for Geth is [geth.ethereum.org/docs](https://geth.ethereum.org/docs/). This Wiki is not actively maintained, serves as an archive only, and we will soon remove it.**
+
+***
+
+***
 **Q.**  I noticed my peercount slowly decrease, and now it is at 0.  Restarting doesn't get any peers.
 
 **A.**  Check and sync your clock with ntp.  [Example](http://askubuntu.com/questions/254826/how-to-force-a-clock-update-using-ntp) `sudo ntpdate -s time.nist.gov`

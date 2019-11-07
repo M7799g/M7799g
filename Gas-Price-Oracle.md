@@ -1,3 +1,9 @@
+***
+
+**The current best source of documentation for Geth is [geth.ethereum.org/docs](https://geth.ethereum.org/docs/). This Wiki is not actively maintained, serves as an archive only, and we will soon remove it.**
+
+***
+
 The gas price oracle is a helper function of the Geth client that tries to find an appropriate default gas price when sending transactions. It can be parametrized with the following command line options:
 
 - gpomin: lower limit of suggested gas price. This should be set at least as high as the "gasprice" setting usually used by miners so that your transactions will not be rejected automatically because of a too low price.

@@ -1,3 +1,9 @@
+***
+
+**The current best source of documentation for Geth is [geth.ethereum.org/docs](https://geth.ethereum.org/docs/). This Wiki is not actively maintained, serves as an archive only, and we will soon remove it.**
+
+***
+
 This page describes how to set up a monitoring site, [like this one](http://eth-netstats.herokuapp.com/), for your private network. It builds upon [this wiki article](https://github.com/ethereum/go-ethereum/wiki/Setting-up-private-network-or-local-cluster) and assumes you've created a local cluster using [this script (gethcluster.sh)](https://github.com/ethersphere/eth-utils).
 
 The monitoring system consists of two components:

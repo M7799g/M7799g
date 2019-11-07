@@ -1,3 +1,9 @@
+***
+
+**The current best source of documentation for Geth is [geth.ethereum.org/docs](https://geth.ethereum.org/docs/). This Wiki is not actively maintained, serves as an archive only, and we will soon remove it.**
+
+***
+
 # URLs in DAPP browsers 
 
 URLs should contain all allowable urls in browsers and _all_ `http(s)` urls that resolve in a usual browser must resolve the same way. 

@@ -1,3 +1,9 @@
+***
+
+**The current best source of documentation for Geth is [geth.ethereum.org/docs](https://geth.ethereum.org/docs/). This Wiki is not actively maintained, serves as an archive only, and we will soon remove it.**
+
+***
+
 To provide Ethereum integration for your mobile applications, the very first thing you should be interested in doing is account management.
 
 Although all current leading Ethereum implementations provide account management built in, it is ill advised to keep accounts in any location that is shared between multiple applications and/or multiple people. The same way you do not entrust your ISP (who is after all your gateway into the internet) with your login credentials; you should not entrust an Ethereum node (who is your gateway into the Ethereum network) with your credentials either. 

@@ -1,3 +1,9 @@
+***
+
+**The current best source of documentation for Geth is [geth.ethereum.org/docs](https://geth.ethereum.org/docs/). This Wiki is not actively maintained, serves as an archive only, and we will soon remove it.**
+
+***
+
 An Ethereum network is a private network if the nodes are not connected to the main
 network nodes. In this context private only means reserved or isolated, rather than
 protected or secure.

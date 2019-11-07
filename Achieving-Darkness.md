@@ -1,3 +1,9 @@
+***
+
+**The current best source of documentation for Geth is [geth.ethereum.org/docs](https://geth.ethereum.org/docs/). This Wiki is not actively maintained, serves as an archive only, and we will soon remove it.**
+
+***
+
 Whisper is designed to be a building block in the next generation of unstoppable ÐApps. It was designed to provide resilience and privacy at considerable expense. At its most secure mode of operation Whisper can theoretically deliver complete darkness. Whisper should also allow the users to configure the level of privacy (how much information it leaks concerning the ÐApp content and ultimately, user activities) as a trade-off for performance. In this article we will discuss the strategy of achieving complete darkness.
 
 ### Adversary

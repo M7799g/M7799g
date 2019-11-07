@@ -1,3 +1,9 @@
+***
+
+**The current best source of documentation for Geth is [geth.ethereum.org/docs](https://geth.ethereum.org/docs/). This Wiki is not actively maintained, serves as an archive only, and we will soon remove it.**
+
+***
+
 The modular nature of Go and the Ethereum Go implementation, [eth-go](https://github.com/ethereum/eth-go), make it very easy to build your own Ethereum native applications. 
 
 This post will cover the minimal steps required to build an native Ethereum application.

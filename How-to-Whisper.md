@@ -1,3 +1,9 @@
+***
+
+**The current best source of documentation for Geth is [geth.ethereum.org/docs](https://geth.ethereum.org/docs/). This Wiki is not actively maintained, serves as an archive only, and we will soon remove it.**
+
+***
+
 Whisper is a pure identity-based messaging system. Whisper provides a low-level (non-application-specific) but easily-accessible API without being based upon or prejudiced by the low-level hardware attributes and characteristics, particularly the notion of singular endpoints.
 
 This tutorial assumes you've read [p2p 101](https://github.com/ethereum/go-ethereum/wiki/Peer-to-Peer). If you haven't read it I suggest you read it. This tutorial will guide you to setting up a full p2p server with whisper capabilities.

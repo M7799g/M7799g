@@ -1,3 +1,9 @@
+***
+
+**The current best source of documentation for Geth is [geth.ethereum.org/docs](https://geth.ethereum.org/docs/). This Wiki is not actively maintained, serves as an archive only, and we will soon remove it.**
+
+***
+
 The only way to get code into go-ethereum is to send a pull request. Those pull requests
 need to be reviewed by someone. This document is a guide that explains our expectations
 around PRs for both authors and reviewers.

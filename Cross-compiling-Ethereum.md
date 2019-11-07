@@ -1,3 +1,9 @@
+***
+
+**The current best source of documentation for Geth is [geth.ethereum.org/docs](https://geth.ethereum.org/docs/). This Wiki is not actively maintained, serves as an archive only, and we will soon remove it.**
+
+***
+
 **Note: All of these and much more have been merged into the project Makefile.
 You can cross build via `make geth-<os>-<platform>` without needing to know any
 of these details from below.**

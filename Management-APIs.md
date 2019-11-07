@@ -1,3 +1,9 @@
+***
+
+**The current best source of documentation for Geth is [geth.ethereum.org/docs](https://geth.ethereum.org/docs/). This Wiki is not actively maintained, serves as an archive only, and we will soon remove it.**
+
+***
+
 Beside the official [DApp APIs](https://github.com/ethereum/wiki/wiki/JSON-RPC) interface go-ethereum
 has support for additional management APIs. Similar to the DApp APIs, these are also provided using
 [JSON-RPC](http://www.jsonrpc.org/specification) and follow exactly the same conventions. Geth comes
