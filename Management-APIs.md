@@ -1144,7 +1144,7 @@ transactions).
 {
   pending: {
     0x0216d5032f356960cd3749c31ab34eeff21b3395: {
-      806: [{
+      806: {
         blockHash: "0x0000000000000000000000000000000000000000000000000000000000000000",
         blockNumber: null,
         from: "0x0216d5032f356960cd3749c31ab34eeff21b3395",
@@ -1156,10 +1156,10 @@ transactions).
         to: "0x7f69a91a3cf4be60020fb58b893b7cbb65376db8",
         transactionIndex: null,
         value: "0x19a99f0cf456000"
-      }]
+      }
     },
     0x24d407e5a0b506e1cb2fae163100b5de01f5193c: {
-      34: [{
+      34: {
         blockHash: "0x0000000000000000000000000000000000000000000000000000000000000000",
         blockNumber: null,
         from: "0x24d407e5a0b506e1cb2fae163100b5de01f5193c",
@@ -1171,12 +1171,12 @@ transactions).
         to: "0x7320785200f74861b69c49e4ab32399a71b34f1a",
         transactionIndex: null,
         value: "0x0"
-      }]
+      }
     }
   },
   queued: {
     0x976a3fc5d6f7d259ebfb4cc2ae75115475e9867c: {
-      3: [{
+      3: {
         blockHash: "0x0000000000000000000000000000000000000000000000000000000000000000",
         blockNumber: null,
         from: "0x976a3fc5d6f7d259ebfb4cc2ae75115475e9867c",
@@ -1188,10 +1188,10 @@ transactions).
         to: "0x346fb27de7e7370008f5da379f74dd49f5f2f80f",
         transactionIndex: null,
         value: "0x1f161421c8e0000"
-      }]
+      }
     },
     0x9b11bf0459b0c4b2f87f8cebca4cfc26f294b63a: {
-      2: [{
+      2: {
         blockHash: "0x0000000000000000000000000000000000000000000000000000000000000000",
         blockNumber: null,
         from: "0x9b11bf0459b0c4b2f87f8cebca4cfc26f294b63a",
@@ -1203,8 +1203,8 @@ transactions).
         to: "0x24a461f25ee6a318bdef7f33de634a67bb67ac9d",
         transactionIndex: null,
         value: "0xebec21ee1da40000"
-      }],
-      6: [{
+      },
+      6: {
         blockHash: "0x0000000000000000000000000000000000000000000000000000000000000000",
         blockNumber: null,
         from: "0x9b11bf0459b0c4b2f87f8cebca4cfc26f294b63a",
@@ -1216,19 +1216,7 @@ transactions).
         to: "0x6368f3f8c2b42435d6c136757382e4a59436a681",
         transactionIndex: null,
         value: "0xf9a951af55470000"
-      }, {
-        blockHash: "0x0000000000000000000000000000000000000000000000000000000000000000",
-        blockNumber: null,
-        from: "0x9b11bf0459b0c4b2f87f8cebca4cfc26f294b63a",
-        gas: "0x15f90",
-        gasPrice: "0x4a817c800",
-        hash: "0x60803251d43f072904dc3a2d6a084701cd35b4985790baaf8a8f76696041b272",
-        input: "0x",
-        nonce: "0x6",
-        to: "0x8db7b4e0ecb095fbd01dffa62010801296a9ac78",
-        transactionIndex: null,
-        value: "0xebe866f5f0a06000"
-      }],
+      },
     }
   }
 }
